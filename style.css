@@ -1,0 +1,31 @@
+#header{
+    background: blue;
+}
+.container{
+
+    width: 1140px;
+    margin: 0 auto;
+}
+.header1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+@media(max-width: 450px){
+    .container{...}
+    .header1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 320px){
+    .container{
+        width: 290px;
+    }
+    .header1{
+        display: none;
+    }
+}
